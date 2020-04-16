@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Shahazad's Blog`,
     author: {
-      name: `Kyle Mathews`,
+      name: `Shahazad Uddin`,
       summary: `who lives and works in Bangalore and writes about his encounters with Data Structures, Algorithms and Web Development`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
