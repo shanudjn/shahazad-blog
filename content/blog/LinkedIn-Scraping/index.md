@@ -6,7 +6,7 @@ I know what your question will be -- Why do you want to scrape websites using Ja
 
 As I am learning Javascript so I decided to put a constraint on myself and try to scrape a website to solidify whatever I have learnt this past week and try to scrape LinkedIn.
 
-# Prerequisites
+## Prerequisites
 This tutorial is aimed to be biginner friendly. If you are following along, you would need to install [NodeJS](https://nodejs.org/en/) in your PC.
 The source code with be available in the given repository :<br>
 [Github repo](https://github.com/shanudjn/Web-Scraping-with-NodeJS)
