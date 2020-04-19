@@ -6,6 +6,10 @@ I know what your question will be -- Why do you want to scrape websites using Ja
 
 As I am learning Javascript so I decided to put a constraint on myself and try to scrape a website to solidify whatever I have learnt this past week and try to scrape LinkedIn.
 
+## Goal 
+The goal of this tutorial is to scrape LinkedIn for the top 10 profiles that LinkedIn shows when the user provides a search string and save the individual pages as a .txt file in your local file system.
+
+
 ## Prerequisites
 This tutorial is aimed to be biginner friendly. If you are following along, you would need to install [NodeJS](https://nodejs.org/en/) in your PC.
 The source code with be available in the given repository :<br>
@@ -29,6 +33,8 @@ As we have three dependencies, we need to install them. Run the following comman
 * `npm install puppeteer`
 * `npm install cheerio`
 * `npm install file-system`
+
+
 
 
 
