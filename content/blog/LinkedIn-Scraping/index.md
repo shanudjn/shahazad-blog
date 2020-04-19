@@ -39,11 +39,16 @@ As we have three dependencies, we need to install them. Run the following comman
 * `npm install cheerio`
 * `npm install file-system`
 
+
+## Breaking down the problem
 Now as we are ready with all out dependencies, let us start by breaking down the project so that we can handle each individual problems and tackle it one by one. At this point, the problems which are apparent are:
 1. We need to first login to LinkedIn. Therefore, we would need to automate form submission.
-2.Then we would need to figure out a way to provide the search string, so that LinkedIn gives as the top 10 profiles to scrape.
+2. Then we would need to figure out a way to provide the search string, so that LinkedIn gives as the top 10 profiles to scrape.
 3. Then we would need to search for the profile links of the individual profile from the search results.
 4. Go to the individual profile links and save the pages to our file system.
+
+
+
 
 
 
