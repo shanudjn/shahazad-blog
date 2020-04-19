@@ -7,7 +7,12 @@ I know what your question will be -- Why do you want to scrape websites using Ja
 As I am learning Javascript so I decided to put a constraint on myself and try to scrape a website to solidify whatever I have learnt this past week and try to scrape LinkedIn.
 
 ## Goal 
-The goal of this tutorial is to scrape LinkedIn for the top 10 profiles that LinkedIn shows when the user provides a search string and save the individual pages as a .txt file in your local file system.
+The goal of this tutorial is to scrape LinkedIn for the top 10 profiles that LinkedIn shows when the user provides a search string and save the individual profile pages as a .txt file in your local file system.Here, we will learn about</br>
+
+## What you will learn
+1. Perform actions inside the browser, which we usually do with our mouse, through code.
+2. Automate form submission.
+3. Learn to save files to our local file system.  
 
 
 ## Prerequisites
@@ -33,6 +38,14 @@ As we have three dependencies, we need to install them. Run the following comman
 * `npm install puppeteer`
 * `npm install cheerio`
 * `npm install file-system`
+
+Now as we are ready with all out dependencies, let us start by breaking down the project so that we can handle each individual problems and tackle it one by one. At this point, the problems which are apparent are:
+1. We need to first login to LinkedIn. Therefore, we would need to automate form submission.
+2.Then we would need to figure out a way to provide the search string, so that LinkedIn gives as the top 10 profiles to scrape.
+3. Then we would need to search for the profile links of the individual profile from the search results.
+4. Go to the individual profile links and save the pages to our file system.
+
+
 
 
 
