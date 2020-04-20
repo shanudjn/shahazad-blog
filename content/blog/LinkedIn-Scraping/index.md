@@ -48,6 +48,46 @@ Now as we are ready with all out dependencies, let us start by breaking down the
 4. Go to the individual profile links and save the pages to our file system.
 
 
+As we have figured out the apparent problems let us dive into the code.
+
+1. ### Logging into LinkedIn
+```
+    //importing the dependencies
+
+    let puppeteer = require("puppeteer");
+    let cheerio = require("cheerio");
+    let fs = require("file-system");
+
+    
+    const EMAIL_SELECTOR = "#username";
+    const PASSWORD_SELECTOR = "#password";
+    const SUBMIT_SELECTOR = "#app__container > main > div > form > div.login__form_action_container > button";
+    const LINKEDIN_LOGIN_URL = "https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin";
+    const SEARCH_STRING = process.argv[2];
+    if (process.argv[2] !== undefined) {
+    (() => {
+        puppeteer
+        .launch({ headless: true })
+        .then(async (browser) => {
+            page = await browser.newPage();
+            page.setViewport({ width: 1366, height: 768 });
+            await page.goto(LINKEDIN_LOGIN_URL, { waitUntil: "domcontentloaded" });
+
+            await page.click(EMAIL_SELECTOR);
+            await page.keyboard.type("your@email.com");
+            await page.click(PASSWORD_SELECTOR);
+            await page.keyboard.type("password");
+            await page.click(SUBMIT_SELECTOR);
+        })
+        .catch((err) => {
+            console.log(" CAUGHT WITH AN ERROR ", err);
+        });
+    })();
+}
+
+
+```
+
 
 
 
