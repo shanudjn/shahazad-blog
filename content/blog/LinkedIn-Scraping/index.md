@@ -51,7 +51,14 @@ Now as we are ready with all out dependencies, let us start by breaking down the
 As we have figured out the apparent problems let us dive into the code.
 
 1. ### Logging into LinkedIn
-```
+    At first we go to the LogIn page where wefind the selectors for our username and password, open chrome developer tools `ctrl+shift+i`.
+    After inspecting the username and password firld we see that the filed are assigned an id.
+    Remeneber if you find are struggling with the code, the link to the repository is given above.
+    Have a look at the picture below : </br>
+    ![login screenshot](./login.png)
+
+
+```js
     //importing the dependencies
 
     let puppeteer = require("puppeteer");
@@ -62,8 +69,10 @@ As we have figured out the apparent problems let us dive into the code.
     const EMAIL_SELECTOR = "#username";
     const PASSWORD_SELECTOR = "#password";
     const SUBMIT_SELECTOR = "#app__container > main > div > form > div.login__form_action_container > button";
-    const LINKEDIN_LOGIN_URL = "https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin";
+    const LINKEDIN_LOGIN_URL = "https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin";    
     const SEARCH_STRING = process.argv[2];
+    
+    //main
     if (process.argv[2] !== undefined) {
     (() => {
         puppeteer
