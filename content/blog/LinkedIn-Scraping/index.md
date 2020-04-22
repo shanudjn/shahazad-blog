@@ -53,7 +53,7 @@ As we have figured out the apparent problems let us dive into the code.
 1. ### Logging into LinkedIn
     At first we go to the LogIn page where wefind the selectors for our username and password, open chrome developer tools `ctrl+shift+i`.
     After inspecting the username and password firld we see that the filed are assigned an id.
-    Remeneber if you find are struggling with the code, the link to the repository is given above.
+    Remember if you are struggling with the code, the link to the repository is given above.
     Have a look at the picture below : </br>
     ![login screenshot](./login.png)
 
@@ -83,8 +83,10 @@ As we have figured out the apparent problems let us dive into the code.
             await page.goto(LINKEDIN_LOGIN_URL, { waitUntil: "domcontentloaded" });
 
             await page.click(EMAIL_SELECTOR);
+            //enter your email in the next line
             await page.keyboard.type("your@email.com");
             await page.click(PASSWORD_SELECTOR);
+            //enter your password in the next line
             await page.keyboard.type("password");
             await page.click(SUBMIT_SELECTOR);
         })
@@ -96,6 +98,23 @@ As we have figured out the apparent problems let us dive into the code.
 
 
 ```
+Do not forget to change to your username and password in the above code.
+If you change headless to false in the above code, you would see a chromium browser open and login to your account automatically.
+
+2. ### Entering the search string.
+After loggin in, the next step we need to do is to find a way to enter the search string.
+After doing some digging, I found that for getting the list of profiles based on your search string we could use a url. Look at the image below:</br>
+![profiles](./list.png)
+So, to get the list of profiles add the following code to the previous code i.e. after >  `await page.click(SUBMIT_SELECTOR);`, add the following code to go to the list page.
+> ```js
+        await page.goto(
+          `https://www.linkedin.com/search/results/people/?keywords=${SEARCH_STRING}&origin=CLUSTER_EXPANSION`,
+          { waitUntil: "domcontentloaded" }
+        );
+
+ ```
+
+
 
 
 
