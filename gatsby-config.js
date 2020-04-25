@@ -9,7 +9,7 @@ module.exports = {
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
       twitter: `md_shanudjn`,
-      linkedin: 'md-shahazad-uddin'
+      linkedin: 'md-shahazad-uddin-2b599614b'
     },
   },
   plugins: [
