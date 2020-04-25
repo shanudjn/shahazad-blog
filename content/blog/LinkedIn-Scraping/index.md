@@ -171,11 +171,11 @@ for (let i = 0; i < data.length; i++) {
           newPage.close();
 }
 ```
-The above code loops through the links array and goes to the individual profile pages. We save the pages in the form of an .txt file. One thing to rememeber, that it is always a good practice to close the headless browser after scraping. So, add the following line to close the browser after the for loop.
+The above code loops through the links array and goes to the individual profile pages. We save the pages in the form of an .txt file. One thing to rememeber, that it is always a good practice to close the headless browser after scraping. So, add the following line to close the browser after the for loop.<br/>
 ```browser.close();```
 
 
-With this we are done with our code. To run it, in your terminal navigate to your project directory and type the following in ``` node scrape "your search string".
+With this we are done with our code. To run it, in your terminal navigate to your project directory and type the following in ``` node scrape "your search string" ```.
 
 
 
