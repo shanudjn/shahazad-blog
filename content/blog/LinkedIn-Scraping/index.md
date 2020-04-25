@@ -7,7 +7,7 @@ I know what your question will be -- Why do you want to scrape websites using Ja
 As I am learning Javascript so I decided to put a constraint on myself and try to scrape a website to solidify whatever I have learnt this past week and try to scrape LinkedIn.
 
 ## Goal 
-The goal of this tutorial is to scrape LinkedIn for the top 10 profiles that LinkedIn shows when the user provides a search string and save the individual profile pages as a .txt file in your local file system.Here, we will learn about</br>
+The goal of this tutorial is to scrape LinkedIn for the top 5 profiles that LinkedIn shows when the user provides a search string and save the individual profile pages as a .txt file in your local file system.Here, we will learn about</br>
 
 ## What you will learn
 1. Perform actions inside the browser, that we usually do with our mouse, through code.
@@ -176,6 +176,8 @@ The above code loops through the links array and goes to the individual profile 
 
 
 With this we are done with our code. To run it, in your terminal navigate to your project directory and type the following in ``` node scrape "your search string" ```.
+
+And keep in mind that you can always check the github repo for reference.
 
 
 
