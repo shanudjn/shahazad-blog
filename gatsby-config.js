@@ -3,12 +3,13 @@ module.exports = {
     title: `Shahazad's Blog`,
     author: {
       name: `Shahazad Uddin`,
-      summary: `who lives and works in Bangalore and writes about his encounters with Data Structures, Algorithms and Web Development`,
+      summary: `who lives and works in Bangalore and writes about his encounters with Data Structures, Algorithms and Web Development.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      linkedin: `md-shahazad-uddin-2b599614b`,
+      twitter: `md_shanudjn`,
+      linkedin: 'md-shahazad-uddin'
     },
   },
   plugins: [
