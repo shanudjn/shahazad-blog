@@ -29,9 +29,9 @@ The source code with be available in the given repository :<br>
 3. ### File-System
     >It is a Node.js module that allows you to work with the file system of your computer.
 ## Project Setup
-*  Create a folder.
-*  Open the folder from your terminal. Make sure you have NodeJS installed.
-*  In your terminal, run  `npm init`. This will create a `package.json` file inside your folder.
+* Create a folder.
+* Open the folder from your terminal. Make sure you have NodeJS installed.
+* In your terminal, run  `npm init`. This will create a `package.json` file inside your folder.
 
 ## Installing the dependencies
 As we have three dependencies, we need to install them. Run the following commands in the terminal.</br>
