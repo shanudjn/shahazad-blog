@@ -1,6 +1,6 @@
 ---
 title: Scraping LinkedIn with Javascript
-date: "2015-05-01T22:12:03.284Z"
+date: "2020-05-02T22:12:03.284Z"
 ---
 I know what your question will be -- Why do you want to scrape websites using Javascript? This is becuase, in software engineering, it's not about what language you choose, its more about how you use logic to solve problems given certain constraints.
 
@@ -32,7 +32,7 @@ The source code with be available in the given repository :<br>
 ## Project Setup
 
 1. Create a folder.<br/>
-2. Open the folder from your terminal. Make sure you have NodeJS installed.<br/>
+2. Navigate to the folder from your terminal. Make sure you have NodeJS installed.<br/>
 3. In your terminal, run  `npm init`. This will create a `package.json` file inside your folder.
 
 ## Installing the dependencies
@@ -45,16 +45,16 @@ As we have three dependencies, we need to install them. Run the following comman
 ## Breaking down the problem
 Now as we are ready with all out dependencies, let us start by breaking down the project so that we can handle each individual problems and tackle it one by one. At this point, the problems which are apparent are:
 1. We need to first login to LinkedIn. Therefore, we would need to automate form submission.
-2. Then we would need to figure out a way to provide the search string, so that LinkedIn gives as the top 10 profiles to scrape.
+2. Then we would need to figure out a way to provide the search string, so that LinkedIn gives as the top 5 profiles to scrape.
 3. Then we would need to search for the profile links of the individual profile from the search results.
 4. Go to the individual profile links and save the pages to our file system.
 
 
-As we have figured out the apparent problems let us dive into the code.
+As we have figured out the problems let us dive into the code.
 
 1. ### Logging into LinkedIn
-    At first we go to the LogIn page where wefind the selectors for our username and password, open chrome developer tools `ctrl+shift+i`.
-    After inspecting the username and password firld we see that the filed are assigned an id.
+    At first we go to the LogIn page where we find the selectors for our username and password. Open chrome developer tools `ctrl+shift+i`.
+    and inspect the username and password field. We see that the fields are assigned an id.
     Remember if you are struggling with the code, the link to the repository is given above.
     Have a look at the picture below : </br>
     ![login screenshot](./login.png)<br/>
@@ -114,7 +114,7 @@ If you change headless to false in the above code, you can see a chromium browse
 After logging in, the next step we need to do is to find a way to enter the search string.
 After doing some digging, I found that for getting the list of profiles based on your search string we could use a url. Look at the image below:</br>
 ![profiles](./list.png)
-So, to get the list of profiles add the following code to the previous code i.e. after <br/> `await page.click(SUBMIT_SELECTOR);`, add the following code to go to the list page.
+So, to get the list of profiles add the following code to the previous code snippet i.e. after <br/> `await page.click(SUBMIT_SELECTOR);`,from the previous code snippet, add the following code to go to the list page.
 ```js
         await page.goto(
           `https://www.linkedin.com/search/results/people/?keywords=${SEARCH_STRING}&origin=CLUSTER_EXPANSION`,
@@ -154,7 +154,7 @@ async function getDataFromPage() {
     });
 }
 ```
-What the above code does is it selects the profile links with the help of the selectors and add it to an array named links.
+What the above code does is that it selects the profile links with the help of the selectors and adds it to an array named links.
 Then we make a function call to the above function.
 Add the following lines into the main code<br/>
 ```var data = await getDataFromPage();```
