@@ -1,6 +1,7 @@
 ---
 title: Scraping LinkedIn with Javascript
 date: "2020-05-02T22:12:03.284Z"
+description: I know what your question will be — Why do you want to scrape websites using Javascript? This is becuase, in software engineering, it’s not about what language you choose, its more about how you use logic to solve problems given certain constraints.
 ---
 I know what your question will be -- Why do you want to scrape websites using Javascript? This is becuase, in software engineering, it's not about what language you choose, its more about how you use logic to solve problems given certain constraints.
 

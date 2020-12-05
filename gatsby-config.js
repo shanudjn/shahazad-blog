@@ -2,13 +2,13 @@ module.exports = {
   siteMetadata: {
     title: `Shahazad's Blog`,
     author: {
-      name: `Shahazad Uddin`,
-      summary: `who lives and works in Bangalore and writes about his encounters with Data Structures, Algorithms and Web Development.`,
+      name: `Shahazad`,
+      summary: `I write about my experiments with Computer Science .`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `md_shanudjn`,
+      twitter: `shahazad__`,
       //linkedin: 'in/md-shahazad-uddin-2b599614b'
     },
   },
